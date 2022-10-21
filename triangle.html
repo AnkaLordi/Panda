@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div> 
+
+        <h1>Обчислити площу прямокутного трикутника</h1>
+
+        <img src="triangle.png" alt="трикутник">
+        <img src="formula.png" alt="формула">
+
+        <p class="cell">Катет прямокутного трикутника a</p>
+        <p class="cell">Катет прямокутного трикутника c</p>
+        
+        <input type="number" id="k1" /> 
+        <input type="number" id="k2" /> =
+        <input type="number" id="k3" />
+
+        <script>
+            size = 16;
+            function Square() {
+              var k1 = parseInt(document.getElementById("k1").value);
+              var k2 = parseInt(document.getElementById("k2").value);
+              document.getElementById("k3").value = .5*(k1+k2);
+        
+            }
+        
+        
+          </script>
+        <button onclick="Square()">Площа</button>
+
+</body>
+</html>
